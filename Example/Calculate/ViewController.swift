@@ -7,11 +7,19 @@
 //
 
 import UIKit
-
+import Calculate
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let cal = Calculation()
+        let sumOfTwo = cal.sumOfTwoInt(a: 10, b: 80)
+        print("Sum of Two Value",sumOfTwo)
+        let framework = Bundle(for: Calculation.self)
+        let path = framework.path(forResource: "Calculate", ofType: "bundle")
+        let resourcebundle = Bundle(url: URL(fileURLWithPath: path!))
+        let image = UIImage(named: "star.png",in: resourcebundle,compatibleWith: nil)
+        print(image)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

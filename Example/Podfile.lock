@@ -1,0 +1,16 @@
+PODS:
+  - Calculate (0.1.0)
+
+DEPENDENCIES:
+  - Calculate (from `../`)
+
+EXTERNAL SOURCES:
+  Calculate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Calculate: e46809b2285596605140b86995b7f1d0ba0d8769
+
+PODFILE CHECKSUM: 684ab9430f57692849999da81430a620ff5c867d
+
+COCOAPODS: 1.16.2
